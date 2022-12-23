@@ -97,9 +97,7 @@ def check_response(response: dict) -> list:
 def parse_status(homework: dict) -> str:
     """Parsing API response status."""
     if not isinstance(homework, dict):
-        raise TypeError(
-            f'Incorrect homework status format. {homework}'
-        )
+        raise TypeError(f'Incorrect homework status format. {homework}')
     try:
         homework_name = homework['homework_name']
         homework_status = homework['status']
