@@ -1,8 +1,8 @@
 Yandex.Practicum Homework Telegram Bot
 
-For those of us who are tired of constantly refreshing the webpage after sending your work for code review to check it's status. Here's a bot that checks for status updates every 10 minutes and if the status has changed, sends you a notification via Telegram.
+For those of us who are tired of constantly refreshing the webpage after sending your work for code review to check it's status. Here's a bot that checks for status updates every 10 minutes and, if the status has changed, sends you a notification via Telegram.
 
-The bot takes full advantage of Yandex.Practicum homework API and is capable of error handling and reporting on it's own - no need to restart it after it's launched.
+The bot takes full advantage of Yandex.Practicum homework API and is capable of error handling and reporting on it's own - there's no need to restart it after it's launched. Every breath is logged, currently to stdout, but this behaviour can be easily changed.
 
 *You'll need to be a Yandex.Practicum student to get this bot going - the API
 requires an OAuth token.*
@@ -25,3 +25,12 @@ There're two ways to install and launch the robot:
 ```
 
 2. As a docker container on a Raspberry Pi running #Raspbian GNU/Linux 11 (bullseye)#.
+
+```
+docker build -t hwbot .
+```
+```
+docker run -d hwbot
+```
+
+Have fun!

@@ -1,40 +1,40 @@
 class NoTelegramError(BaseException):
-    """Класс, чтобы наследовать от него исключения, не требующие.
-    отправки сообщения в телеграм.
+    """Base parent class for all the exceptions that don't need to be
+    sent to Telegram.
     """
 
 
 class CriticalError(NoTelegramError):
-    """Критическая ошибка в работе робота."""
+    """Critical error."""
 
 
 class IncorrectStatusCode(Exception):
-    """Статус ответа сервера API не равен 200."""
+    """Server response status code is not 200."""
 
 
 class EmptyDictionaryError(Exception):
-    """Пустой словарь."""
+    """The response dictionary is empty."""
 
 
 class RequestFailed(NoTelegramError):
-    """Не получилось получить данные методом requests.get."""
+    """Could not fetch data using requests.get."""
 
 
 class NotFoundError(Exception):
-    """Что-то не найдено."""
+    """Something isn't found."""
 
 
 class ServiceUnavailableError(Exception):
-    """Сервис недоступен."""
+    """Service is unavailable."""
 
 
 class TGMessageNotSent(NoTelegramError):
-    """Не удалось отправить сообщение."""
+    """Could not send a message."""
 
 
 class CouldNotParseError(Exception):
-    """Не удалось распарсить ответ."""
+    """The response could not be parsed."""
 
 
 class RequiredKeyNotFound(NoTelegramError):
-    """В словаре не найдет необходимый ключ."""
+    """Required key not found in the dictionary."""
