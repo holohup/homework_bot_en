@@ -21,4 +21,4 @@ There're two ways to install and launch the robot:
 git clone && cd homework_bot_en && python -m venv venv && source venv/bin/activate && pip install -r requirements.txt && python homework.py
 ```
 
-2. As a docker container.
+2. As a docker container on a Raspberry Pi running #Raspbian GNU/Linux 11 (bullseye)#.
