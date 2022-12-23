@@ -36,11 +36,4 @@ Depending on which path you choose to follow, fill either the _.env.sample_, or 
 docker build -t hwbot . && docker run -d hwbot
 ```
 
-```mermaid
-graph LR
-A((You)) <-- homework status change -- B(Telegram API)
-B <-- C{Bot}
-C --> D(Yandex API)
-```
-
 Have fun!
