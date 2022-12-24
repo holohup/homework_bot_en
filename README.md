@@ -30,7 +30,7 @@ Depending on which path you choose to follow, fill either the _.env.sample_, or 
  python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && python homework.py
 ```
 
-- As a docker container on a Raspberry Pi running _Raspbian GNU/Linux 11 (bullseye)_. Most likely, it'll also run on other SBC's and flavors of Linux, but it hasn't been tested and might require some adjustments in the _Dockerfile_.
+- As a docker container. This linux image choice in _Dockerfile_ has been tested to run both an x86- and ARMv7-based architecture (Raspberry Pi running _Raspbian GNU/Linux 11 (bullseye)_). It will most likely also run on other SBC's and flavors of Linux, but it hasn't been tested and might require some adjustments in the _Dockerfile_.
 
 ```
 docker build -t hwbot . && docker run -d hwbot
