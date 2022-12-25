@@ -6,7 +6,7 @@ COPY requirements.txt .
 RUN apt-get update && apt-get -y install gcc \
     && python -m pip install --upgrade pip \
     && pip install -r requirements.txt
-COPY *.py ./
+COPY *.py .
 ENV TG_TOKEN=
 ENV PRACTICUM_TOKEN=
 ENV CHAT_ID=
