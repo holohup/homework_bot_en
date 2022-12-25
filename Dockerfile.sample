@@ -1,12 +1,10 @@
 FROM python:3.7-slim-bullseye
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
-WORKDIR /bot
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
 ENV TG_TOKEN=
 ENV PRACTICUM_TOKEN=
 ENV CHAT_ID=
+WORKDIR /bot
 COPY requirements.txt .
 RUN apt-get update && apt-get -y install gcc \
     && python -m pip install --upgrade pip \
