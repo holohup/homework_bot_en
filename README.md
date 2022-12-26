@@ -2,7 +2,7 @@
 
 For those of us who are tired of constantly refreshing the webpage after sending our work for code review to check its status. Here's a bot that checks for updates every 10 minutes and, if the status has changed, sends a notification via Telegram.
 
-The bot takes full advantage of Yandex.Practicum homework API and Telegram Bot API, it is lightweight and effective. It is capable of error handling and reporting on its own - there's no need to restart it after it's launched. Every breath is logged, currently to stdout, but this behavior can be easily adjusted to your needs.
+The bot takes full advantage of Yandex.Practicum homework API and Telegram Bot API. It is capable of error handling and reporting on its own - there's no need to restart it after it's launched. Every breath is logged, currently to stdout, but this behavior can be easily adjusted to your needs.
 
 **You've got to be a Yandex.Practicum student to get this bot going - the API
 requires an OAuth token from Yandex.**
